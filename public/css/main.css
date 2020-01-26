@@ -1,0 +1,32 @@
+
+body, html {
+    height: 100%;
+    background-color: lavender;
+    /*background-image: url("/images/cover.jpg");*/
+
+
+
+}
+
+h1{
+    color:orange;
+    background-image: url("/images/cover.jpg");
+    height:500px;
+    font-family: monospace;
+    padding-top:150px;
+    width:1500px;
+    padding-right:80px;
+    text-align: center;
+
+}
+#one{
+    font-family: serif;
+    color: orange;
+    font-size:medium;
+    text-transform: uppercase;
+}
+footer{
+    background-color: cadetblue;
+    text-align: center;
+}
+
