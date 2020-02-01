@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
 }
 .sm-img {
     /* The image used */
@@ -43,6 +44,7 @@ input[type=text], input[type=password] {
     margin: 5px 0 22px 0;
     border: none;
     background: #f1f1f1;
+
 }
 
 input[type=text]:focus, input[type=password]:focus {

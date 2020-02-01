@@ -1,25 +1,53 @@
-
-
+<h2>you need it we've got it</h2>
+<div class="container">
     <div class="row">
         {{#if products}}
             {{#each products}}
                 <div class="col col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                    <div class="card" style="height: 350px">
-                        <a href="/products/{{this.id}}" >
-                            <img src="/{{this.image}}" alt="" class="img-thumbnail" style="height: 250px;width: 100%">
-                            <div class="card-body">
-                                <p>{{this.productsname}}</p>
-                                Seller{{this.name}}
-                                <p class="lead">{{this.seller}}</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            {{/each}}
 
-        {{else}}
-            <p>no products</p>
-        {{/if}}
+    <div class="card" style="width: 18rem;">
+        <img src="/{{this.image}}" alt="" class="img-thumbnail" style="height: 250px;width: 100%">
+    <!--        <img src="../{{this.image}}"/images/productImg_157996356269.jpg" class="card-img-top" alt="...">-->
+        <div class="card-body">
+            <h3 class="card-title"><strong>Name:{{this.name}}</strong></h3>
+            <p class="card-text">Type: {{this.type}}
+            </p>
+            <p class="card-text">Price: {{this.price}}
+            </p>
+            <p class="card-text">Description: {{this.description}}</p>
+            <p class="card-text"> Seller:{{this.seller}}
+            </p>
+        </div><br>
+            <a href="/products/delete/{{this.id}}" class="btn btn-danger">delete</a><br>
+           <a href="/products/update/{{this.id}}" class="btn btn-primary">update</a></div>
+<!--        <a href="/products/update/{{this.id}}" class="btn btn-primary">update</a></div><br>-->
+        </div>
+
+    </div>
+                <br>
+                <br>
+                <br>
+    {{/each}}
+
+    {{else}}
+    <p>no products</p>
+    {{/if}}
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

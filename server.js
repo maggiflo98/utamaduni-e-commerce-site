@@ -34,6 +34,7 @@ app.use(session({
     }
 
 }));
+
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use(express.static('public'));
@@ -46,7 +47,7 @@ app.use('/users',userRoutes);
 app.use('/products',productRoutes);
 
 
-const port =8002;
+const port =3004;
 app.listen(port,function () {
     console.log(`localhost:${port}`)
 
